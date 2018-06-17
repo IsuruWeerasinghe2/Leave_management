@@ -1,0 +1,14 @@
+
+<h1 style="font-family: 'Arial Rounded MT Bold';color: lightseagreen ;padding-top:40px">Please Login</h1>
+  <div class="login-page" style="">
+    <div class="form">
+
+      <form class="login-form" (submit)="loginUser()">
+        <input name="email" [(ngModel)]="email" type="text" placeholder="username"/>
+        <input name="password" [(ngModel)]="password"type="password" placeholder="password"/>
+        <button type="submit" class="btn-primary">Login</button>
+        <p class="message">Not registered? <a [routerLink]="['/register']" >Create an account</a></p>
+      </form>
+    </div>
+  </div>
+
